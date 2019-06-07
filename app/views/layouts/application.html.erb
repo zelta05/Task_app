@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-<<<<<<< HEAD
-    <title><%= full_title(yield(:title)) %></title>
+    <title><%= yield(:title) %> | Task App</title>
     <%= render 'layouts/rails_default' %>
     <%= render 'layouts/shim' %>
-=======
-    <title><title><%= yield(:title) %> | Task App</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
->>>>>>> f9583eac6ee98228b09d51d960308f1a5cbc1e01
   </head>
   <body>
     <%= render 'layouts/header' %>
