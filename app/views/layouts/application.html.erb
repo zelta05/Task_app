@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<<<<<<< HEAD
-    <title><%= yield(:title) %> | Task App</title>
-=======
-    <title><%= yield(:title) %> | Task App </title>
->>>>>>> contact,help
+   <title><%= full_title(yield(:title)) %></title>
     <%= render 'layouts/rails_default' %>
     <%= render 'layouts/shim' %>
   </head>
