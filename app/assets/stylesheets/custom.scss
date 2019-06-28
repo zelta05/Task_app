@@ -1,9 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+<<<<<<< HEAD
 /* header */
 
 
+=======
+>>>>>>> CSS
 /* footer */
 
 footer {
@@ -118,6 +121,7 @@ input {
   margin-left: 0;
 }
 
+<<<<<<< HEAD
 /* Users index */
 
 .users {
@@ -128,4 +132,7 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+  
+.h {
+  color: white;
 }
