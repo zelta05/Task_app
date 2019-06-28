@@ -5,14 +5,16 @@
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 300px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+  
 }
 
 footer a {
-  color: #555;
+   bottom:0;
+  color: black;
 }
 
 footer a:hover {
@@ -20,22 +22,26 @@ footer a:hover {
 }
 
 footer small {
+   position:absolute;
   float: left;
 }
 
 footer ul {
   float: right;
   list-style: none;
+  color:black;
 }
 
 footer ul li {
+  color:black;
+   bottom:0;
   float: left;
   margin-left: 15px;
 }
 
 .p {
   text-align: center;
-  color: purple;
+  color: white;
 }
 
 /* sidebar */
@@ -129,4 +135,25 @@ input {
 }
 .h {
   color: white;
+}
+
+.center {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background: linear-gradient(to bottom, #000066 0%, #99ff99 100%) no-repeat;
+  height: 100vh;
+  
+}
+
+.user_info {
+  color:white;
+}
+
+.ul2 {
+  list-style:none;
+  color: white;
+  text-align: center;
 }
