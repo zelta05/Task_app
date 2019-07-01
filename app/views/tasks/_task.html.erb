@@ -1,24 +1,24 @@
-<div class="col-md-4">
-  <h3> <%= link_to task.name, task_path(task) %> </h3>
-  <span class="complete"> <%= "Complete" if task.complete? %></span>
+<div class="col-md-4 by">
+  <h3 class="t"> <%= link_to task.name, task_path(task) %> </h3>
+  <span class="complete t"> <%= "Complete" if task.complete? %></span>
   
-  <p> <%= task.description %> </p>
-  <p> Owner: <%= task.owner.name %> </p>
-  <p> Due: <%= task.due_date %>  </p>
+  <p class="try"> <%= task.description %> </p>
+  <p class="try"> Owner: <%= task.owner.name %> </p>
+  <p class="try"> Due: <%= task.due_date %>  </p>
   
-  <p> Status: <%= task.status.capitalize %> </p>
+  <p class="try"> Status: <%= task.status.capitalize %> </p>
   
-  <p> Belongs to: <%= link_to task.project.name, project_path(task.project) %> </p>
-  <div class="inline-button">
+  <p class="try"> Belongs to: <%= link_to task.project.name, project_path(task.project) %> </p>
+  <div class="inline-button by l">
     <%= link_to "View task", task_path(task), class: "btn btn-default" %>
   </div>
-  <div class="inline-button">
+  <div class="inline-button by l">
     <%= link_to "Edit task", edit_task_path(task), class: "btn btn-default" %>
   </div>
-  <div class="inline-button">
+  <div class="inline-button by l">
     <%= render partial: "task_complete_form", locals: {task: task} unless task.status == "complete" %>
   </div>
- <div class="line-light"> </div>
+ <div class="line-light by l"> </div>
 </div>
 
 

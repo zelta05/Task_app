@@ -1,5 +1,5 @@
 <div class="default-block">
-  <h2> <%= @project.name %> <%= "✓" if @project.complete? %> <span class="overdue"> <%= "Overdue" if @project.overdue? && !@project.complete? %></span> </h2>
+  <h2> <%= @project.name %> <%= "✓" if @project.complete? %> <span class="overdue" "t"> <%= "Overdue" if @project.overdue? && !@project.complete? %></span> </h2>
   <div class="line-dark"></div>
   <div class="inline-button">
     <%= link_to "Edit Project", edit_project_path(@project), class: "btn btn-primary" %>

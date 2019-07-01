@@ -1,10 +1,10 @@
 <%= render partial: "projects_status_filter", locals:{overdue: @overdue, active: @active, complete: @complete} %>
 
-<div class="default-block">
-  <h2>Active Projects</h2>
-  <div class="line-dark"> </div>
+<div class="default-block t">
+  <h2 class="t">Active Projects</h2>
+  <div class="t"> </div>
   <% if @projects.empty? %>
-    <h4><%= "You don't have any projects yet. Why not start by creating a new one?" %></h4>
+    <h4 class="center"><%= "You don't have any projects yet. Why not start by creating a new one?" %></h4>
   <% else %>
     <div class="row">
       <% @projects.each_with_index do |project, index| %>

@@ -1,10 +1,10 @@
-<div class="default-block">
+<div class="l">
   <%= render partial: "messages/errors", locals: {resource: @task} %>
-  <h2>Quick Add Task</h2>
+  <h2 class="t">Quick Add Task</h2>
     <div class="line-dark"></div>
     <%= form_for(@task, {url: post_quick_new_task_path, controller: "tasks", action: "create", method: "post", html: {class: "form-inline"}}) do |f| %>
       <div class="form-group">
-        <%= f.label :name, class: "label-block"%>
+        <%= f.label :name, class: "label-block quick"%>
           <%= f.text_field :name, class: "form-control" %>
       </div>
       <div class="form-group">

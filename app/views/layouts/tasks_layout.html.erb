@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tasks - Rails PM</title>
+    <title>Tasks - Project Manager</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -9,12 +9,11 @@
   </head>
   <body>
     <%= render "navs/nav_base"%>
-    <div class="header">
+    <div class="t">
       <div class="container">
         
-        <% else %>
-          <h1> Tasks </h1> 
-        <% end %>
+        
+          <h1 class"t"> Tasks </h1> 
       </div>
     </div>
     <%= render "navs/projects_sub_nav" unless @project.nil? %>
